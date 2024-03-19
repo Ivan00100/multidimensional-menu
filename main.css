@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    color: inherit;
+    font: inherit;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type:none;
+}
+
+header{
+    background: rgb(42, 42, 42);
+}
+.menu > ul{
+ display: flex;
+ justify-content: center;
+ margin-top: 50px;
+}
+
+.menu > ul li a{
+    display: block;
+    padding: 15px 30px 15px 40px;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu > ul li{
+    position: relative;
+    border-right: 2px solid rgb(181, 0, 253);
+}
+.menu > ul li:first-child{
+    border-left: 2px solid rgb(181, 0, 253);
+}
+
+
+
+.menu li a:hover{
+ background: rgb(255, 53, 53);
+ color: black;
+ transition: 0.7s;
+}
+
+
+/* sub menu */
+.menu li ul{
+ position: absolute;
+ min-width: 150px;
+ display: none;
+}
+
+.menu li > ul li{
+    border: 1px solid rgb(181, 0, 253);
+}
+
+.menu li ul li a{
+    padding: 10px;
+    text-transform: none;
+    background: rgb(42, 42, 42);
+    color: white;
+    text-align: center;
+}
+
+.sec_menu {
+    position: relative;
+}
+
+.sec_menu > ul{
+position: absolute;
+top: 0;
+ left: 100%;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+.menu > ul > li:hover > a{
+    background: rgb(255, 53, 53);
+}
+
+.focus > ul > li:hover > a::after{
+    content: "+";
+}
+
+.focus > ul > li:hover > a{
+    background: rgb(255, 53, 53);
+}
+
+.menu li > ul li ul a:nth-child(2n+1){
+ background: green;
+}
+.menu li > ul li ul a:nth-child(2n+2):not(:last-child){
+ background:blue;
+}
+.menu li > ul li ul a:last-child{
+ background: purple;
+}
+
